@@ -2,6 +2,8 @@
 #   TEMPLATES   #
 #################
 
+The project *TEMPLATES* accords to the automotive environment to italicize the structure
+
 Templates includes 3 main folders:
 
 - PROTOTYPE - contains the pattern files for the production folder;
