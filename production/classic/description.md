@@ -1,7 +1,5 @@
-######################
-#   CLASSIC FOLDER   #
-######################
+########################
+#   SEGMENT: CLASSIC   #
+########################
 
-Contains classic *models* of web layouts:
-
--> MODERN BIZ - ideal for small biz;
+- MODERN BIZ - ideal for small biz;
