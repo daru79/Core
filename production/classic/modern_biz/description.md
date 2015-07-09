@@ -1,7 +1,13 @@
-######################
-#   CLASSIC FOLDER   #
-######################
+#########################
+#   MODEL: MODERN BIZ   #
+#########################
 
-Contains classic *models* of web layouts:
+Changelog:
 
--> MODERN BIZ - ideal for small biz;
+version X.X.X [08/07/2015]
+===========================
+- ADDED
+- REMOVED
+- CHANGED
+
+- INITIAL RELEASE
