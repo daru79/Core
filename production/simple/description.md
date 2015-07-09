@@ -1,13 +1,6 @@
-###############################
-#   MODEL:   #   MODERN BIZ   #
-###############################
+#######################
+#   SEGMENT: SIMPLE   #
+#######################
 
-Changelog:
-
-version X.X.X -> 08/07/2015
-===========================
-- ADDED
-- REMOVED
-- CHANGED
-
-- INITIAL RELEASE
+- FREELANCER/PORTFOLIO - ideal for a freelancer to show all your stuff;
+- CV/RESUME - ideal for anyone to show the experience;
