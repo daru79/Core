@@ -83,13 +83,13 @@
         <!-- ################### -->
         <!-- HINT: remove it while setting in production -->
         <style>
-            /*
+            
             [class*="col-"]{
                 background-color: rgba(255,195,50,.3);
                 border: 1px solid rgba(255,195,50,.4);
                 padding: 10px;
             }
-            */
+            
         </style>
     </head>
     <body> 
@@ -149,9 +149,13 @@
         
         <div class="container-fluid">
             <div class="row">
+                <!-- Headline box -->
                 <div class="col-md-3">
                     Mały box
                 </div>
+                <!-- /.Headline box -->
+                
+                <!-- Carousel box -->
                 <div class="col-md-9">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -160,28 +164,30 @@
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
+                        <!-- /.Indicators -->
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="http://placehold.it/1350x450" alt="...">
+                                <img src="http://placehold.it/1350x450" class="img-responsive" alt="...">
                                 <div class="carousel-caption">
                                     First slide
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="http://placehold.it/1350x450" alt="...">
+                                <img src="http://placehold.it/1350x450" class="img-responsive" alt="...">
                                 <div class="carousel-caption">
                                     Second slide
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="http://placehold.it/1350x450" alt="...">
+                                <img src="http://placehold.it/1350x450" class="img-responsive" alt="...">
                                 <div class="carousel-caption">
                                     Third slide
                                 </div>
                             </div>
                         </div>
+                        <!-- /.Wrapper for slides -->
 
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -192,9 +198,105 @@
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                        <!-- /.Controls -->
+                        
                     </div>
                 </div>
+                <!-- /.Carousel box -->
+                
             </div>
+            
+            <div class="row">
+                <!-- Product boxes -->
+                <div class="col-md-3 text-center">
+                    <img src="http://placehold.it/250x250" class="img-responsive thumbnail center-block" alt="...">
+                    <h3>Text Heading</h3>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+                    <a class="btn btn-default" href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="http://placehold.it/250x250" class="img-responsive thumbnail center-block" alt="...">
+                    <h3>Text Heading</h3>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+                    <a class="btn btn-default" href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="http://placehold.it/250x250" class="img-responsive thumbnail center-block" alt="...">
+                    <h3>Text Heading</h3>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+                    <a class="btn btn-default" href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="http://placehold.it/250x250" class="img-responsive thumbnail center-block" alt="...">
+                    <h3>Text Heading</h3>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+                    <a class="btn btn-default" href="#" role="button">Read more...</a>
+                </div>
+                <!-- /.Product boxes -->
+            </div>
+            
+            <div class="row">
+                <!-- Promo text -->
+                <div class="col-md-12 text-center">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                </div>
+                <!-- /.Promo text -->
+            </div>
+            
+            <div class="row">
+                <!-- Additional boxes -->
+                <div class="col-md-4">
+                    <img src="http://placehold.it/100x100" class="img-responsive thumbnail pull-left" alt="...">
+                    <h4>Text Heading</h4>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/100x100" class="img-responsive thumbnail pull-left" alt="...">
+                    <h4>Text Heading</h4>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/100x100" class="img-responsive thumbnail pull-left" alt="...">
+                    <h4>Text Heading</h4>
+                    <p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+                </div>
+                <!-- /.Additional boxes -->
+            </div>
+            
+            <div class="row">
+                <!-- Left-footer box -->
+                <div class="col-md-3">
+                    <h3>Text heading</h3>
+                    <p class="text-justify">Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+                </div>
+                <!-- /.Left-footer box -->
+                
+                <!-- Right-footer box -->
+                <div class="col-md-9">
+                    <h3>Text heading</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="http://placehold.it/180x100" class="img-responsive thumbnail center-block" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="http://placehold.it/180x100" class="img-responsive thumbnail center-block" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="http://placehold.it/180x100" class="img-responsive thumbnail center-block" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.Right-footer box -->
+            </div>
+            
+            <div class="row">
+                <!-- Footer -->
+                <div class="col-md-12 text-center">
+                    Copyright © 2015 silesian-code.pl
+                </div>
+                <!-- /.Footer -->
+            </div>
+            
         </div><!-- /.container-fluid -->
         
         <!-- ############## -->
