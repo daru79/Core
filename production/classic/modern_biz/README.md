@@ -3,7 +3,8 @@
 #########################
 
 Build phases:
-1. Making the grid system and putting some text & fake images using pure BS;
+=============
+- Making the grid system and putting some text & fake images using pure BS;
 
 Changelog:
 
