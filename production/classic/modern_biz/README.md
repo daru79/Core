@@ -6,6 +6,10 @@ Build phases:
 =============
 - Making the grid system and putting some text & fake images using pure BS;
 
+TO DO:
+=============
+- scalić ikonkę szukania w górnym menu;
+
 Changelog:
 ==========
 
