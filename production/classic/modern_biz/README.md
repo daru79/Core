@@ -8,7 +8,7 @@ Build phases:
 
 TO DO:
 =============
-- scalić ikonkę szukania w górnym menu;
+- propozycja, aby każdą sekcję opakować w przeźroczysty box;
 
 Changelog:
 ==========
