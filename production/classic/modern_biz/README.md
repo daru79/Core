@@ -8,7 +8,7 @@ Build phases:
 
 TO DO:
 =============
-- propozycja, aby każdą sekcję opakować w przeźroczysty box;
+- uporządkowanie struktury plików .less
 
 Changelog:
 ==========
