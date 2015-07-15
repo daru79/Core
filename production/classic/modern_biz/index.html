@@ -139,7 +139,7 @@
         </nav>
         
         <div class="container">
-            <header>
+            <header class="box">
                 <div class="row">
                     <!-- Headline box -->
                     <div class="col-md-3">
@@ -197,7 +197,7 @@
                 </div>
             </header>
             
-            <section id="products">
+            <section class="box" id="products">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
@@ -233,7 +233,7 @@
                 </div>
             </section>
             
-            <section id="promo">
+            <section class="box" id="promo">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
@@ -248,7 +248,7 @@
                 </div>
             </section>
             
-            <section id="additional">
+            <section class="box" id="additional">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
@@ -275,12 +275,22 @@
                 </div>
             </section>
             
-            <section id="footer">
+            <section class="box" id="footer">
                 <div class="row">
                     <!-- Left-footer box -->
                     <div class="col-md-3">
                         <h3 class="page-header">Text heading</h3>
                         <p class="text-justify">Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Newsletter...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-send"></span></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <!-- /.Left-footer box -->
 
@@ -306,8 +316,22 @@
             <footer>
                 <div class="row">
                     <!-- Footer -->
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-6">
                         Copyright © 2015 - silesian-code.pl
+                    </div>
+                    <div class="col-md-6 text-right social-icons">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-google fa-stack-1x"></i>
+                        </span>
                     </div>
                     <!-- /.Footer -->
                 </div>
