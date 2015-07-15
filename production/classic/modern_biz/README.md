@@ -9,6 +9,7 @@ Build phases:
 TO DO:
 =============
 - uporządkowanie struktury plików .less
+- kolejna inspiracyjka (dla footer'a): http://jednotka-v1-6-1.bublinastudio.com/
 
 Changelog:
 ==========
