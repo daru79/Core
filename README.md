@@ -15,3 +15,4 @@ Templates includes 3 main folders:
 ############
 
 - include the cookies policy to the prototype file and all other files!
+- add some subtitles (.text-mutted) to the headers...
