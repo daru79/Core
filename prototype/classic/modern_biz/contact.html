@@ -90,13 +90,13 @@
         <!-- ################### -->
         <!-- HINT: remove it while setting in production -->
         <style>
-            /*
+            
             [class*="col-"]{
                 background-color: rgba(255,195,50,.3);
                 border: 1px solid rgba(255,195,50,.4);
                 padding: 10px;
             }
-            */
+            
         </style>
     </head>
     <body style="background-image: url('images/background/bg.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;"> 
@@ -165,11 +165,97 @@
                     <!-- /.Map -->
                     
                     <div class="col-md-4">
-                        <h3>Contact Details <small>some text</small></h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Contact Details <small>some text</small></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-home fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-10">
+                                <p>3481 Melrose Place, Beverly Hills, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-phone fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-10">
+                                <p>555 555 555</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-paper-plane fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-10">
+                                <p>your@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-clock-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-10">
+                                <p>Monday - Friday, 8:00 - 16:00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.Content Row -->
                 
+            </section>
+            
+            <section class="box" id="form">
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Send us a Message
+                            <span class="text-muted small">Some subtitle</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Your name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="tel" class="form-control" placeholder="Telephpne">
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary pull-right">Send Message</button>
+                    </div>
+                    </form>
+                </div>
+                <!-- /.Contact Form -->
             </section>
             
             <section class="box" id="footer">
