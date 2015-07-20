@@ -65,7 +65,16 @@
         <!-- URL: http://www.primebox.co.uk/projects/jquery-cookiebar/ -->
         <!-- HINT: JS files in the bottom of the HTML document -->
         <link rel="stylesheet" href="css/vendor/jquery_cookiebar.css" type="text/css">
-                                
+        
+        <!-- ######################## -->
+        <!-- #   FANCYBOX GALLERY   # -->
+        <!-- ######################## -->
+        <!-- HINT: add the gallery in production only -->
+        <!-- GGL: fancybox -->
+        <!-- URL: http://fancyapps.com/fancybox/ -->
+        <link rel="stylesheet" href="css/vendor/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+        <!-- HINT: add more optional features if needed - see the URL for instructions -->
+        
         <!-- ################# -->
         <!-- #   MODERNIZR   # -->
         <!-- ################# -->
@@ -128,11 +137,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="about.html">O nas</a></li>
                         <li><a href="products.html">Produkty</a></li>
-                        <li class="active"><a href="offer.html">Oferta</a></li>
-                        <li class="dropdown">
+                        <li><a href="offer.html">Oferta</a></li>
+                        <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Realizacje <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="item.html">Produkt 1</a></li>
+                                <li class="active"><a href="item.html">Produkt 1</a></li>
                                 <li><a href="#">Produkt 2</a></li>
                                 <li><a href="#">Produkt 3</a></li>
                                 <li role="separator" class="divider"></li>
@@ -146,79 +155,77 @@
         </nav>
         
         <div class="container">
-            <section class="box" id="prices">
+            <section class="box" id="gallery">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            Price Table
+                            Products Gallery
                             <span class="text-muted small">Some subtitle</span>
                         </h1>
                     </div>
                 </div>
                 
-                <!-- Prices boxes -->
+                <!-- Gallery -->
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading"><h3>Product #1</h3></div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="price">$19<sup>99</sup></span>
-                                    <span class="period">per month</span>
-                                </h3>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>1</strong> User</li>
-                                <li class="list-group-item"><strong>5</strong> Projects</li>
-                                <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                                <li class="list-group-item"><strong>10GB</strong> Disk Space</li>
-                                <li class="list-group-item"><strong>100GB</strong> Monthly Bandwidth</li>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive img-hover" alt="...">
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading"><h3>Product #2</h3></div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="price">$19<sup>99</sup></span>
-                                    <span class="period">per month</span>
-                                </h3>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>1</strong> User</li>
-                                <li class="list-group-item"><strong>5</strong> Projects</li>
-                                <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                                <li class="list-group-item"><strong>10GB</strong> Disk Space</li>
-                                <li class="list-group-item"><strong>100GB</strong> Monthly Bandwidth</li>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive img-hover" alt="...">
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading"><h3>Product #3</h3></div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="price">$19<sup>99</sup></span>
-                                    <span class="period">per month</span>
-                                </h3>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>1</strong> User</li>
-                                <li class="list-group-item"><strong>5</strong> Projects</li>
-                                <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                                <li class="list-group-item"><strong>10GB</strong> Disk Space</li>
-                                <li class="list-group-item"><strong>100GB</strong> Monthly Bandwidth</li>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive img-hover" alt="...">
                     </div>
-                </div>                
-                <!-- /.Prices boxes -->
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive img-hover" alt="...">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-3 img-portfolio">
+                        <img src="http://placehold.it/450x250" class="img-responsive" alt="...">
+                    </div>
+                </div>
+                <!-- /.Gallery -->
             </section>
             
             <section class="box" id="footer">
@@ -310,6 +317,12 @@
         <!-- ###################### -->
         <script src="js/vendor/jquery_cookiebar.js"></script>
         <script src="js/cookies.js"></script>
+        
+        <!-- ######################## -->
+        <!-- #   FANCYBOX GALLERY   # -->
+        <!-- ######################## -->
+        <script src="js/vendor/jquery.fancybox.pack.js"></script>
+        <!-- HINT: add more optional features if needed - see the URL for instructions -->
         
         <!-- ############### -->
         <!-- #   PLUGINS   # -->
