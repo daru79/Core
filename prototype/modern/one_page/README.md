@@ -1,6 +1,6 @@
-***********************
-*   MODEL: ONE PAGE   *
-***********************
+#######################
+#   MODEL: ONE PAGE   #
+#######################
 
 Rzeczy do wzicia pod uwage:
 - struktura
