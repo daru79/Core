@@ -70,3 +70,121 @@
     
 }
 // /.Alignment, positioning, etc.
+
+// Padding (top/bottom)
+.padding-top-bottom(@p-top;@p-bottom) {
+    padding: @p-top 0 @p-bottom;
+    
+}
+// /.Padding (top/bottom)
+
+// Borders
+.basic-border(@width; @style; @color: @border-color) {
+    border-width: @width;
+    border-style: @style;
+    border-color: @color;
+    
+}
+// /.Borders
+
+// Paragraphs
+.paragraph(@font-size: @font-size-base; @line-height: @line-height-base; @color: @paragraph-color) {
+    font-size: @font-size;
+    line-height: @line-height;
+    color: @color;
+    
+}
+// /.Paragraphs
+
+// Lists
+.list-style-none {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    
+}
+// /.Lists
+
+// Icons
+.icon-span-round(@dimension) {
+    .inline-block;
+    .center-text;
+    border-radius: 50%;
+    width: @dimension;
+    height: @dimension;
+    
+}
+
+.icon(@color; @font-size; @line-height: @line-height-base) {
+    color: @color;
+    font-size: @font-size;
+    line-height: @line-height;
+    
+}
+// /.Icons
+
+// Overlay
+.dark-overlay {
+    content: ""; // it will be an :after element
+    z-index: 0;
+    background: none repeat rgba(30,30,30,0.5);
+    .absolute-one-hundred-size;
+    
+}
+// /.Overlay
+
+// Shadows
+.shadow(@properties) {
+    box-shadow: @properties;
+    
+}
+// /.Shadows
+
+// Section horizontal line
+.section-line-mix {
+    background: @section-line-color;
+    content: "";
+    height: 2px;
+    margin-top: 10px;
+    width: 45%;
+    
+}
+// /.Section horizontal line
+
+// Transition (for :hover purposes)
+.basic-transition {
+    transition: all 0.5s ease-in-out; // for all :hover elements
+    
+}
+// /.Transition
+
+// Flexbox
+// URL: http://burczu-programator.pl/blog/model-flexbox-i-interfejs-wielokolumnowy-w-html5-i-css3
+// GGL: flexbox
+.flex-display {
+    display: flex;
+    display: -ms-flexbox;
+    
+}
+
+.flex-justify {
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    
+}
+
+.flex-align {
+    align-items: center;
+    -ms-flex-align: center;
+}
+// /.Flexbox
+
+// Slider pictures
+.bg-image(@url) {
+    background-image: @url;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; // horizontal and vertical position
+    
+}
+// /.Slider pictures
