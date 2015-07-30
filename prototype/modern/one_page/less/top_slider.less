@@ -3,3 +3,26 @@
     Author     : Puzel
 */
 
+// Overall
+.top-slider {
+    min-height: 927px;
+    z-index: 0;
+    .relative;
+    .container { // dla tekstu na slajdzie
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%); // przesunięcie kontenera o 50% w górę, aby napisy były w środku
+    }
+}
+
+#top-slider { // konkretny slajd (?)
+    position: fixed;
+    width: 100%;
+}
+
+.top-slider .carousel-inner, .top-slider .item {
+    min-height: 927px;
+}
+// /.Overall
