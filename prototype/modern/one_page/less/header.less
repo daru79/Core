@@ -3,3 +3,153 @@
     Author     : Puzel
 */
 
+// ### Main menu ###
+// Main container (display the cookie bar!!!)
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: @alternate-bg;
+    z-index: 1;
+    .shadow(0 0 3px 0 rgba(0, 0, 0, 0.5));
+}
+// /.Main container
+
+// Header height standard (110px)
+.main-header, .header-content, .main-logo, .nav-main, .nav-right {
+    height: @header-height-std;
+}
+// /.Header height standard (110px)
+
+// Header height small (60px)
+.header-short, .header-short .header-content, .header-short .main-logo, .header-short .nav-main, .header-short .nav-right { // otoczenie ww. klas nową klasą .header-short dodawaną dynamicznie po scroll'u
+    height: @header-height-sm;
+}
+// /.Header height small (60px)
+
+// Logo
+.logo-wrapper {
+    display: table;
+    .main-logo {
+        display: table-cell;
+        .v-align;
+    }
+}
+// /.Logo
+
+// Overall styles
+.header-content {
+    ul {
+        .list-style-none;
+        li {
+            float: left;
+            a {
+                color: @menu-text-color;
+                font-weight: 700;
+                text-decoration: none;
+                .upper;
+                .basic-transition;
+                &:hover {
+                    color: @menu-hover-color;
+                }
+            }
+        }
+    }
+}
+// /.Overall styles
+
+// Menu items
+.nav-main { // Links
+    ul {
+        overflow: hidden; // bez tego element pływający miałby wysokość 0
+        .v-align-transform;
+        li {
+            float: left;
+            line-height: 1.4;
+            a {
+                padding: 0 18px;
+            }
+        }
+    }
+}
+.menu-link-active { // Active link
+    color: @menu-hover-color !important;
+} 
+.nav-right { // Icons
+    ul {
+        .v-align-transform;
+        overflow: hidden;
+        margin-left: 20px;
+        li {
+            padding: 0 13px;
+        }
+    }
+}
+// /.Menu items
+// ### /.Main menu ###
+
+// ### Mobile menu ###
+// Menu area
+.mobile-menu {
+    display: none;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: @dark-bg;
+    padding: 30px 20px 0 30px;
+}
+// /.Menu area
+
+// Close icon
+.mobile-menu-close {
+    transform: translateY(-8px); // przesunięcie w dół
+    i {
+        .icon(@bright-text-color; 20px);
+        opacity: 0.5;
+        .basic-transition;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+// /.Close icon
+
+// Navigation list
+.main-nav-list-mobile {
+    .list-style-none;
+    li {
+        margin-bottom: 10px;
+        line-height: 1.4;
+        a {
+            color: @bright-text-color;
+            opacity: 0.5;
+            .basic-transition;
+            text-decoration: none;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+// /.Navigation list
+
+// Mobile icon
+.mobile-nav-button {
+    .v-align-transform; //wyśrodkowanie względem obiektu otaczającego
+    .basic-border(1px; solid; @menu-text-color);
+    border-radius: 2px;
+    padding: 2px 4px;
+    display: table;
+    &:hover {
+        color: @menu-hover-color;
+    }
+    i {
+        .icon(@menu-text-color; 21px; 23px); // wartości: kolor, wys. tekstu, wys. linii
+    }
+}
+// /.Mobile icon
+// ### /.Mobile menu ###
