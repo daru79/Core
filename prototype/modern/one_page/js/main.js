@@ -12,7 +12,11 @@ $(document).ready(function(){
     });
     // /.Promo slider
     
-    mobileMenu()
+    mobileMenu();
+    
+    // Timer
+    $('.timer').countTo();
+    // /.Timer
 });
 // /.Sliders parameters
 

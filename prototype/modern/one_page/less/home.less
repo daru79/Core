@@ -166,3 +166,338 @@
 }
 // /.Right column
 // ### /.Video section ###
+
+// ### Advantages section ###
+.our-advantages {
+    .padding-top-bottom(50px; 50px);
+    @media @small {
+        .padding-top-bottom(100px; 100px);
+    }
+    .intro-text { // style dla .intro-text pod warunkiem, że jest w klasie .our-advantages
+        margin-bottom: 80px;
+    }
+}
+
+// Right column
+.our-advantages-text {
+    margin-top: 35px;
+    @media @small {
+        margin-left: 40px;
+    }
+    h3 {
+        font-weight: 600;
+        .upper;
+    }
+    p {
+        color: @text-color;
+    }
+}
+
+.our-advantages-list {
+    margin-bottom: 30px;
+    .list-style-none;
+    overflow: auto;
+    // dzielenie listy na 2 kolumny dla większych urządzeń
+    @media @medium {
+        margin-left: -20px;
+    }
+    li {
+        padding: 4px 0;
+        .block;
+        width: auto;
+        &:before {
+            content: '';
+            .inline-block;
+            margin-right: 12px;
+            background: @brand-primary;
+            .size(8px; 2px);
+            .v-align;
+        }
+        @media @medium {
+            float: left;
+            margin-left: 20px;
+            width: 45%;
+        }
+    }
+    // /.dzielenie listy na 2 kolumny dla większych urządzeń
+}
+
+.our-advantages-bottom-row {
+    a {
+        margin-bottom: 20px;
+        margin-right: 30px;
+        @media @small {
+            margin-bottom: 0;
+        }
+        i {
+            color: @bright-text-color;
+        }
+    }
+    i {
+        .v-align;
+        .icon(lighten(@icon-color, 10%); 24px; 1);
+        margin-right: 15px;
+    }
+}
+// /.Right column
+// ### /.Advantages section ###
+
+// ### Offer section ###
+.offer {
+    .padding-top-bottom(50px; 50px);
+    .center-text;
+    div[class*="col-"] {
+        margin-bottom: 50px;
+    }
+    @media @small {
+        .padding-top-bottom(100px;40px);
+        text-align: left;
+    }
+}
+
+.offer-single {
+    i {
+        .icon(@brand-primary; 32px; 32px);
+        margin-bottom: 15px;
+        @media @medium {
+            float: left;
+            margin-right: 25px;
+        }
+    }
+}
+
+.offer-text {
+    h3 {
+        font-weight: 600;
+        .upper;
+    }
+    p {
+        overflow: hidden;
+    }
+}
+// ### /.Offer section ###
+
+// ### Projects section ###
+.latest-projects {
+    .padding-top-bottom(50px; 0);
+    @media @small {
+        .padding-top-bottom(100px; 100px);
+    }
+}
+
+// * column
+.latest-project-inner {
+    .shadow(0 1px 0 rgba(0, 0, 0, 0.1));
+    padding: 25px;
+    border-radius: 3px;
+    h3 {
+        letter-spacing: 0.5;
+        margin-bottom: 25px;
+        font-weight: 600;
+        a {
+            color: @text-color;
+            text-decoration: none;
+            .basic-transition; // zawsze dodajemy do stanu podstawowego
+            &:hover {
+                color: @brand-primary;
+            }
+        }
+    }
+}
+
+.latest-project-head {
+    margin: -25px -25px 25px;
+    a {
+        .relative;
+        .block;
+        overflow: hidden;
+        border-radius: 3px 3px 0 0; // lewa góra, prawa góra, lewy dół, prawy dół
+        // Image zoom effect
+        img {
+            opacity: 1;
+            transform: scale(1.07);
+            transition: opacity 0.3s, transform 0.3s
+        }
+        &:hover img {
+            opacity: 0.8;
+            transform: scale(1);
+        }
+        // /.Image zoom effect
+    }
+}
+
+.latest-project-content {
+    font-size: 14px;
+}
+
+.hor-line {
+    margin: 0 -25px 25px; // góra, boki, dół
+    height: 1px;
+    .block;
+    background: lighten(@border-color, 6%);
+}
+
+.comments-link {
+    color: @paragraph-color;
+    text-decoration: none;
+    line-height: 30px;
+    .basic-transition;
+    &:hover {
+        color: @brand-primary;
+        text-decoration: none;
+    }
+}
+
+.read-more {
+    line-height: 30px;
+    font-size: 24px;
+    color: @border-color;
+    .basic-transition;
+    &:hover {
+        color: @brand-primary;
+    }
+}
+// /.* column
+// ### /.Projects section ###
+
+// ### Promo section ###
+.promo {
+    margin-top: 50px;
+    @media @medium {
+        margin-top: 0;
+    }
+}
+
+// 1st column (description)
+.promo-description {
+    margin: 100px 50px 0; // góra, boki, dół
+    .center-text;
+}
+
+.promo-description-head {
+    margin-bottom: 20px;
+    img {
+        margin: 0 auto 20px; // góra, boki, dół
+    }
+    span {
+        font-size: 13px;
+        font-weight: 600;
+        strong {
+            color: @brand-primary;
+            font-size: 18px;
+            .block; // element blokowy wymusze przejście elementów sąsiednich na dół
+        }
+    }
+}
+
+.promo-description-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+// /.1st column (description)
+
+// Logo row
+.promo-logos {
+    background: @light-bg;
+    .padding-top-bottom(30px; 30px);
+    @media @small {
+        .padding-top-bottom(90px; 90px);
+    }
+    @media @large {
+        position: absolute;
+        bottom: 100%;
+        width: 50%;
+        .padding-top-bottom(50px; 50px);
+    }
+}
+
+.logos-list {
+    .list-style-none;
+    margin: 0 auto; // góra/dół, boki
+    width: 80%;
+    // rozłożenie ikon w poziomie
+    .flex-display; // w jaki sposób zawartość listy ma się zachowywać
+    .flex-justify; // równomierne rozłożenie
+    li {
+        .inline-block; // ułożenie obok siebie (można też użyć float: left;)
+        line-height: 1.2;
+        // /.rozłożenie ikon w poziomie
+        a {
+            color: @dark-bg;
+            .block;
+            opacity: 0.2;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 74px;
+            .basic-transition;
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+    }
+}
+// /.Logo row
+// ### /.Promo section ###
+
+// ### Statistics section ###
+.statistics {
+    .padding-top-bottom(90px; 50px);
+    .bg-image(url('../images/sky-bg.jpg'));
+    @media @medium {
+        .padding-top-bottom(120px; 110px);
+    }
+}
+
+// Rozmieszczenie poszczególnych ikon + textu = bloków
+.statistics-content {
+    .center-text;
+    @media @medium {
+        text-align: justify;
+    }
+}
+
+.statistics-block {
+    .inline-block;
+    margin: 0 15px 25px;
+    .center-text;
+}
+
+.justify-hack { // Utworzenie fałszywej linii, aby linia z blokami mogła się wyjustować
+    width: 100%;
+    .inline-block;
+    line-height: 0;
+    font-size: 0;
+} 
+// /.Rozmieszczenie poszczególnych ikon
+
+.statistics-icon {
+    .inline-block;
+    margin-bottom: 9px;
+    font-size: 26px;
+    color: @bright-text-color;
+}
+
+.statistics-value {
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    .block;
+    margin-top: 20px;
+    color: @brand-primary;
+    @media @small {
+        height: 80px;
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+
+.statistics-text {
+    font-size: 15px;
+    line-height: 1.4;
+    .block;
+    .upper;
+    margin-top: 20px;
+    color: @bright-text-color;
+    opacity: 0.4;
+}
+// ### /.Statistics section ###
