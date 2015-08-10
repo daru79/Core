@@ -501,3 +501,60 @@
     opacity: 0.4;
 }
 // ### /.Statistics section ###
+
+// ### Contact section ###
+// 2nd column
+.form-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact-form {
+    margin: 50px 20px 20px 20px;
+    @media @medium {
+        margin: 50px 30px 20px 50px;
+        padding-right: 20%;
+    }
+    @media @large {
+        margin: 120px auto 20px 80px;
+    }
+    textarea {
+        height: 220px;
+        padding: 15px;
+        text-indent: 0; // wcięcie tekstu
+    }
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+// /.2nd column
+// ### /.Contact section ###
+
+// ### Call to action section ###
+.bottom-row {
+    .padding-top-bottom(70px;70px);
+    background: @logos-bg;
+    color: @bright-text-color;
+    .center-text;
+    h3 {
+        .header-mixin(24px;400);
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    a {
+        margin-top: 20px;
+        background: none;
+        .basic-border(2px;solid;@bright-text-color);
+        .basic-transition;
+        color: @bright-text-color;
+        @media @small {
+            margin-top: 0;
+        }
+        &:hover {
+            background: @bright-text-color;
+            color: @logos-bg;
+        }
+    }
+}
+// ### /.Call to action section ###
