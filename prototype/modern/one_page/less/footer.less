@@ -3,3 +3,82 @@
     Author     : Puzel
 */
 
+// ### Main footer style ###
+footer {
+    background: @dark-bg;
+    color: @footer-text-color;
+}
+
+.footer-main {
+    .container {
+        padding-top: 80px;
+        margin-bottom: 40px;
+        h4 {
+            .header-mixin(14px;700);
+            margin-bottom: 25px;
+            .upper;
+        }
+        ul {
+            .list-style-none;
+        }
+        a {
+            color: darken(@footer-text-color, 10%);
+            &:hover {
+                text-decoration: none;
+                color: lighten(@footer-text-color, 10%);
+            }
+        }
+    }
+}
+
+// 1st column (about)
+.footer-social {
+    li {
+        .inline-block;
+        margin-right: 6px;
+        margin-bottom: 3px;
+        a {
+            .basic-transition;
+            .center-text;
+            .inline-block;
+            .square(30px); // sprawienie, że odnośniki będą kwadratami
+            text-decoration: none;
+/*            border: 1px solid white;
+            border-radius: 3px;*/
+            &:hover > i { // :hover który wpływa na element 'i'
+                color: lighten(@footer-text-color, 20%);
+            }
+            i {
+                .icon(@footer-text-color; 16px; 28px); // wysokość linii (28px) musi być prawie taka sama jak wys. odnośnika, dzięki temu ikony w ramach elementu 'a' wyśrodkowane w pionie
+            }
+        }
+    }
+}
+// /.1st column (about)
+
+// 2nd column (blog) & 3rd column (links)
+.our-blog, .our-links {
+    li {
+        border-top: 1px solid @footer-border-color;
+        &:first-child {
+            border-top: none;
+        }
+        a {
+            .inline-block;
+            .padding-top-bottom(10px; 10px);
+            line-height: 1.5;
+        }
+    }
+}
+
+.our-blog {
+    .footer-col-container {
+        margin-right: 20px;
+    }
+}
+// /.2nd column (blog) & 3rd column (links)
+
+// 4th column (gallery)
+
+// /.4th column (gallery)
+// ### /.Main footer style ###
