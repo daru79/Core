@@ -13,6 +13,9 @@ footer {
     .container {
         padding-top: 80px;
         margin-bottom: 40px;
+        div[class*="col-"] { // dot. to wszystkich klas, które zawierają (podany w cudzysłowiu) ciąg znaków
+            margin-bottom: 10px;
+        }
         h4 {
             .header-mixin(14px;700);
             margin-bottom: 25px;
@@ -79,6 +82,43 @@ footer {
 // /.2nd column (blog) & 3rd column (links)
 
 // 4th column (gallery)
-
+.our-gallery {
+    .footer-col-container {
+        margin-left: 0;
+        @media @small {
+            margin-left: 40px;
+        }
+    }
+    li {
+        .inline-block;
+        margin-bottom: 6px;
+        margin-right: 2px;
+        img {
+            width: 65px;
+        }
+        a {
+            .basic-transition;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
 // /.4th column (gallery)
+
+// Lower footer
+.copyright {
+    background: @copyright-bg;
+    .upper;
+    .center-text;
+    font-size: 11px;
+    @media @small {
+        text-align: left;
+    }
+}
+
+.copyright-content {
+    .padding-top-bottom(30px;10px);
+}
+// /.Lower footer
 // ### /.Main footer style ###
