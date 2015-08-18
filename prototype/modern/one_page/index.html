@@ -41,11 +41,16 @@
         <!-- ########################################################### -->
         <!-- Style file -->
         <!-- HINT: remove this LESS file after adding a final CSS file -->
-        <link rel="stylesheet" href="less/style.less" type="text/less">
+        <!-- <link rel="stylesheet" href="less/style.less" type="text/less"> -->
         <!-- LESS to CSS on the fly compiler -->
         <!-- HINT: remove this compiler after adding a final CSS file -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/less-2.5.1.min.js"><\/script>')</script>
+        <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script> -->
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/less-2.5.1.min.js"><\/script>')</script> -->
+        
+        <!-- ########### -->
+        <!-- #   CSS   # -->
+        <!-- ########### -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
         
         <!-- #################### -->
         <!-- #   FONT AWESOME   # -->
@@ -196,7 +201,7 @@
             <!-- Slider section -->
             <section class="top-slider">
                 <!-- Top slider -->
-                <div id="top-slider" class="carousel slide" data-ride="carousel">
+                <div id="top-slider" class="carousel slide" data-ride="carousel" data-0="transform:translateY(0px);" data-800="transform:translateY(-400px);">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#top-slider" data-slide-to="0" class="active"></li>
@@ -213,7 +218,7 @@
                             
                             <!-- Text -->
                             <div class="container">
-                                <div class="item-content">
+                                <div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
                                     <h1>Style LESS</h1>
                                     <h3>W pełni responsywny</h3>
                                     <a class="btn btn-danger" href="#">
@@ -997,6 +1002,12 @@
         <!-- ############### -->
         <!-- URL: https://github.com/mhuggins/jquery-countTo -->
         <script src="js/vendor/jquery.countTo.js"></script>
+        
+        <!-- ###################### -->
+        <!-- #   PARALAX EFFECT   # -->
+        <!-- ###################### -->
+        <!-- URL: https://github.com/prinzhorn/skrollr -->
+        <script src="js/vendor/skrollr.min.js"></script>
                 
         <!-- ############### -->
         <!-- #   PLUGINS   # -->

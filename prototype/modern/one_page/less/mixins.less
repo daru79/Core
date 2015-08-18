@@ -192,3 +192,12 @@
     
 }
 // /.Slider pictures
+
+// Bootstrap button mixin override (:hover)
+.button-variant(@color; @background; @border) {
+    &:hover {
+        background-color: darken(@background, 5%);
+        border-color: transparent;
+    }
+}
+// /.Bootstrap button mixin override (:hover)

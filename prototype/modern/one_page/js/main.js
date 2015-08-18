@@ -17,6 +17,10 @@ $(document).ready(function(){
     // Timer
     $('.timer').countTo();
     // /.Timer
+    
+    // Paralax effect
+    var s = scrollr.init({forceHeight: false});
+    // /.Paralax effect
 });
 // /.Sliders parameters
 
